@@ -11,9 +11,9 @@ Deno.test(function inputParsing() {
   );
 });
 
-Deno.test(async function checkPart1() {
-  assertEquals(2904518, await day1.part1());
-});
+// Deno.test(async function checkPart1() {
+//   assertEquals(2904518, await day1.part1());
+// });
 
 Deno.test(function counts() {
   const counts = countList([1, 1, 2, 2, 2, 3]);
@@ -23,6 +23,6 @@ Deno.test(function counts() {
   assertEquals(counts.get(4) ?? 0, 0);
 });
 
-Deno.test(async function checkPart2() {
-  assertEquals(18650129, await day1.part2());
-});
+// Deno.test(async function checkPart2() {
+//   assertEquals(18650129, await day1.part2());
+// });

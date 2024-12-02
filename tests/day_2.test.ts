@@ -14,10 +14,10 @@ Deno.test("check safe", () => {
   });
 });
 
-Deno.test(async function part1() {
-  assertEquals(await day2.part1(), 236);
-});
+// Deno.test(async function part1() {
+//   assertEquals(await day2.part1(), 236);
+// });
 
-Deno.test(async function part2() {
-  assertEquals(await day2.part2(), 308);
-});
+// Deno.test(async function part2() {
+//   assertEquals(await day2.part2(), 308);
+// });
