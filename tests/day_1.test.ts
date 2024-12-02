@@ -1,6 +1,5 @@
 import { assertEquals } from "@std/assert/equals";
 import { countList, getNumLists } from "../src/day_1.ts";
-import day1 from "../src/day_1.ts";
 
 Deno.test(function inputParsing() {
   assertEquals(

@@ -1,5 +1,5 @@
 import { assertEquals } from "@std/assert/equals";
-import day2, { reportIsSafe } from "../src/day_2.ts";
+import { reportIsSafe } from "../src/day_2.ts";
 
 Deno.test("check safe", () => {
   ([

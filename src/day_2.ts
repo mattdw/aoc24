@@ -44,9 +44,8 @@ export function* droppingOne(nums: Sliceable<number>): Generator<number[]> {
   // outputs at once so uses more memory.
 
   for (let i = 0; i < nums.length; i++) {
-    yield [...nums.slice(0, i), ...nums.slice(i+1)];
+    yield [...nums.slice(0, i), ...nums.slice(i + 1)];
   }
-
 }
 
 export function reportIsSafe2(nums: Sliceable<number>): boolean {
