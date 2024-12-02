@@ -25,7 +25,7 @@ export function reportIsSafe(nums: number[]): boolean {
 export function droppingOne(nums: number[]): number[][] {
   const outs: number[][] = [];
 
-  for (let i = 0; i< nums.length; i++) {
+  for (let i = 0; i < nums.length; i++) {
     const o = [...nums];
     o.splice(i, 1);
     outs.push(o);
@@ -35,10 +35,9 @@ export function droppingOne(nums: number[]): number[][] {
 }
 
 export function reportIsSafe2(nums: number[]): boolean {
-
   if (reportIsSafe(nums)) return true;
 
-  return droppingOne(nums).some(r => reportIsSafe(r));
+  return droppingOne(nums).some((r) => reportIsSafe(r));
 }
 
 export default {
@@ -57,6 +56,6 @@ export default {
     const reports = input.trim().split("\n").map((line) => {
       return line.trim().split(/\D+/).map((v) => Number.parseInt(v));
     });
-    return reports.filter(v => reportIsSafe2(v)).length;
+    return reports.filter((v) => reportIsSafe2(v)).length;
   },
 };

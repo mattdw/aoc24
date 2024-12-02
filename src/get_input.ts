@@ -10,6 +10,9 @@ export async function getInput(day: number): Promise<string> {
           headers: { Cookie: `session=${Deno.env.get("SESSION")}` },
         },
       );
+      if (resp.status !== 200) {
+        throw new Error("failed to fetch input");
+      }
       const result = await resp.text();
       await Deno.writeTextFile(fname, result);
       return result;
