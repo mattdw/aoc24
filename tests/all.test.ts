@@ -15,7 +15,7 @@ const days: [
 ][] = [
   [1, day_1, 2904518, 18650129],
   [2, day_2, 236, 308],
-  [3, day_3, 0, 0],
+  [3, day_3, 174960292, 56275602],
 ];
 
 Deno.test(async function solveAll(t) {
