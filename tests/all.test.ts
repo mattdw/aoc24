@@ -2,6 +2,7 @@ import { assertEquals } from "@std/assert/equals";
 import day_1 from "../src/day_1.ts";
 import day_2 from "../src/day_2.ts";
 import day_3 from "../src/day_3.ts";
+import day_5 from "../src/day_5.ts";
 
 interface Stringable {
   toString(): string;
@@ -16,6 +17,7 @@ const days: [
   [1, day_1, 2904518, 18650129],
   [2, day_2, 236, 308],
   [3, day_3, 174960292, 56275602],
+  [5, day_5, -1, -1],
 ];
 
 Deno.test(async function solveAll(t) {
